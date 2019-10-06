@@ -1,8 +1,9 @@
 # jQuery Salary Calculator 
 
-- [X ]add `Salary Calculator` heading to html
-- [X] add `Add Employee` header to html
-- [X]add inputs for `First Name` `Last Name` `ID` `Title` `Annual Salary`  html
+- []add `Salary Calculator` heading to html
+    -[] format heading css
+- [] add `Add Employee` header to html
+- []add inputs for `First Name` `Last Name` `ID` `Title` `Annual Salary`  html
 - add `Submit` button html
     - add event listener on Submit to add new employee record to table (js)
 - add ‘Employees’ header above table html
