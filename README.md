@@ -1,35 +1,55 @@
-# jQuery Salary Calculator 
+![REPO SIZE](https://img.shields.io/github/repo-size/ayriela/jquery-salary-calculator.svg?style=flat-square)
+![TOP_LANGUAGE](https://img.shields.io/github/languages/top/ayriela/jquery-salary-calculator.svg?style=flat-square)
+![FORKS](https://img.shields.io/github/forks/ayriela/jquery-salary-calculator.svg?style=social)
+# Salary Calculator 
 
-- []add `Salary Calculator` heading to html
-    -[] format heading css
-- [] add `Add Employee` header to html
-- []add inputs for `First Name` `Last Name` `ID` `Title` `Annual Salary`  html
-- add `Submit` button html
-    - add event listener on Submit to add new employee record to table (js)
-- add ‘Employees’ header above table html
-- add table with headers `First Name` `Last Name` `ID` `Title` `Annual Salary` and blank in html
-    - add test entry hardcoded in table 
-    - add delete button to hardcoded entry
-    - force salary to money formatting in js
-    - use event listener with descendent selector to set up click action on delete button 
-        - delete action will  call delete row function 
+- Add `Salary Calculator` page header 
+    - Format so that the text is centered and header banner has distinct background color
+- [] add `Add an Employee` header above inputs 
+    -  Accept user input for `First Name`, `Last Name`, `ID`, `Title`, `Annual Salary`  
+    - Add a `Submit` button to store the id and salary to an array and update the table display
+- add ‘Employees’ header above the table display
+- add table with headers `First Name`, `Last Name`, `ID`, `Title`,`Annual Salary` and an additional blank column 
+    - add test entry hardcoded in table via html
+    - add a delete button to hardcoded entry
+        - use event listener with descendent selector to set up click action on all delete buttons
+        - delete action will call deleteRow function 
     - add table footer of single color (no divisions)
 - at bottom of page add `Total Monthly:`
-    - calculate value by sum of salaries  and divide by 12  (js  calculate monthly function)
-    -  
+    - Calculate this value as a sum of the salaries divided by 12  
 
-- Formatting general rules: 
-    - header is colored with colored text
-    - box around the full page values 
-    - have whole box centered on page?
-    - rounded buttons 
-    - table values left aligned but salary is right aligned
-    - delete button is centered
+## General Formatting rules: 
+    - Border the whole page  
+    - Center the whole page 
+    - Use rounded buttons 
+    - Format table so header and row items are distinct, and there are divisions between columns
+    - Table values are left aligned but salary is right aligned
+    - Delete buttons are centered in column
     - border in and around table
 
 
 ## Description
+Duration: Weekend Project 
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This jQuery Salary caluclator allows users to enter new employee records to the page and calculate the monnthly expected salary cost. If needed users may delete employee records and update the monthly salay expense. 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/github-finalization-assignment).
+## Screen Shot
+
+## Installation 
+
+Install this project by forking and cloning this github repository to local file system.
+
+## Usage
+
+## Built With
+
+-javascript 
+-jQuery
+
+## Roadmap
+- Add check to make sure employee ids being added are unique and alert user if the id is already taken
+-Add format check to make sure value entered in the annual salary input is a number
+-Add auto formatting to table entries to correct the name or job title capitalization from user entered
+
+## Acknowledgement
+Thanks to Prime Digital Academy

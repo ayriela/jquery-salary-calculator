@@ -26,6 +26,13 @@ function addEmployee(){
     let jobTitle=$('#jobTitle').val();
     //make number for future calculations
     let annual=Number($('#annualSalary').val());
+    //clear the input fields
+    $('#firstName').val('');
+    $('#lastName').val('');
+    $('#employeeId').val('');
+    $('#jobTitle').val('');
+    $('#annualSalary').val('');
+
     //add employee to array
     currentEmployees.push(
         {
@@ -67,4 +74,8 @@ function totalMonthly(array){
     let totalMoney=totalMonth.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
     //update DOM
     $('#total').text('Monthly Total: $' + totalMoney);
+    //if total >20000 add red background
+    if (totalMonth>20000){
+        $('#total').css('background-color', 'red');
+    }
 }//end totalMonthly
