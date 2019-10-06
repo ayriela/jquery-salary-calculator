@@ -1,3 +1,46 @@
-table, th, td {
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+thead {
+    background-color: cadetblue;
+    color: snow;
+  }
+table {
+    margin-left : 1%;
+    margin-right: auto;
+    width: 90%;
+  }
+
+tr{
+    height: 25px;
     border: 1px solid black;
   }
+
+h1{
+    text-align: center;
+    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    vertical-align: center;
+    color: navy;
+  }
+
+input{
+    width: 19%
+}
+
+div.addEmployeeOptions button{
+
+}
+
+
+body{
+    border: 1px solid black;
+      
+      
+  }
+
+

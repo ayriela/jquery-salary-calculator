@@ -31,7 +31,7 @@
 ## Description
 Duration: Weekend Project 
 
-This jQuery Salary caluclator allows users to enter new employee records to the page and calculate the monnthly expected salary cost. If needed users may delete employee records and update the monthly salay expense. 
+This Salary Caluclator allows users to enter new employee records to the page and calculate the monnthly expected salary cost. If needed users may delete employee records and update the monthly salary expenses. 
 
 ## Screen Shot
 
@@ -40,16 +40,20 @@ This jQuery Salary caluclator allows users to enter new employee records to the 
 Install this project by forking and cloning this github repository to local file system.
 
 ## Usage
-
+- if user enters employees whose total monthly salaries will be more than $20,000 the background of total monthly becomes red
 ## Built With
 
--javascript 
--jQuery
+- javascript 
+- jQuery
 
 ## Roadmap
 - Add check to make sure employee ids being added are unique and alert user if the id is already taken
--Add format check to make sure value entered in the annual salary input is a number
--Add auto formatting to table entries to correct the name or job title capitalization from user entered
+- Add format check to make sure value entered in the annual salary input is a number
+- Add auto formatting to table entries to correct the name or job title capitalization from user entered
+- Not designed for large employee sets as written. To account for this:
+    - add ability to import a full employee list
+    - add ability for user to configure expense threshold below or above $20,000
+    - adjust total calculation so running total is stored and delete simply subtracts new value or appends new value on delete or add employee action
 
 ## Acknowledgement
 Thanks to Prime Digital Academy
