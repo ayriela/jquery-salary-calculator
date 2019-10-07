@@ -11,7 +11,7 @@ function onReady(){
     console.log('in onReady')
     $('#addNewEmployee').on('click', addEmployee);
     //display starting monthly total
-    $('#total').text('Monthly Total: $' + (80000/12).toFixed(2));
+    $('#foot').append('<td colspan="6">Monthly Total: $' + (80000/12).toFixed(2)+'</td>');
     //add event listener for all new deleteButtons 
     $('#employeeTable').on('click', '.deleteButton', deleteRow);
 }//end onReady
@@ -43,7 +43,7 @@ function addEmployee(){
     //format salary to money
     let salary=annual.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
     //add new employee to table including new delete button
-    let str=`<tr id=${employeeId}><td>${firstName}</td><td>${lastName}</td><td>${employeeId}</td><td>${jobTitle}</td><td>$${salary}</td><td><button class="deleteButton">Delete</button></td></tr>`
+    let str=`<tr id=${employeeId}><td>${firstName}</td><td>${lastName}</td><td>${employeeId}</td><td>${jobTitle}</td><td style="text-align: right">$${salary}</td><td><button class="deleteButton">Delete</button></td></tr>`
     $('tbody').append(str);
     //update totalMonthly
     totalMonthly(currentEmployees);
@@ -73,9 +73,11 @@ function totalMonthly(array){
     //format total to money (copied regex from stack Overflow)
     let totalMoney=totalMonth.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
     //update DOM
-    $('#total').text('Monthly Total: $' + totalMoney);
+    $('#foot').replaceWith('<tr id="foot"><td colspan="6">Monthly Total: $' + totalMoney+ '</td></tr>');
     //if total >20000 add red background
     if (totalMonth>20000){
-        $('#total').css('background-color', 'red');
+        $('tfoot').css('background-color', 'red');
+    } else {
+        $('tfoot').css('background-color', 'white');
     }
 }//end totalMonthly

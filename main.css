@@ -1,46 +1,56 @@
 table, th, td, tr {
     border: 1px solid black;
     border-collapse: collapse;
-  }
-
+}
 thead {
     background-color: cadetblue;
     color: snow;
-  }
+}
 table {
     margin-left : 1%;
     margin-right: auto;
     width: 90%;
-  }
+    margin-bottom: 2%;
+
+}
 
 tr{
     height: 25px;
     border: 1px solid black;
-  }
+}
 
 h1{
     text-align: center;
-    background-color: cadetblue;
+    background-color: steelblue;
     margin: 0;
     padding: 0;
     height: 50px;
     vertical-align: center;
-    color: navy;
+    color: snow;
   }
 
 input{
     width: 19%
 }
 
-div.addEmployeeOptions button{
-
+#addNewEmployee{
+    float: right;
 }
 
+#total{
+    float: right;
+}
+tfoot{
+    text-align: right;
+}
 
 body{
     border: 1px solid black;
-      
-      
-  }
+}
+
+.deleteButton{
+    display: block;
+    margin: auto;
+}
 
 
